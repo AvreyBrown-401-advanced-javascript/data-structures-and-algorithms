@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1572539239084" clover="3.2.0">
+  <project timestamp="1572539239084" name="All files">
+    <metrics statements="10" coveredstatements="1" conditionals="9" coveredconditionals="0" methods="1" coveredmethods="0" elements="20" coveredelements="1" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+    <file name="multiBracket.js" path="C:\Users\Avrey\Desktop\codefellows\401\data-structures-and-algorithms\multibracket\multiBracket.js">
+      <metrics statements="10" coveredstatements="1" conditionals="9" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="13" count="0" type="cond" truecount="0" falsecount="5"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+      <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="21" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>

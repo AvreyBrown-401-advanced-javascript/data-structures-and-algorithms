@@ -1,10 +1,10 @@
-# Reverse an Array
+# k-th value from the end of a linked list.
 <!-- Short summary or background information -->
-Challenge is to reverse an array without .reverse()
+Write a method for the Linked List class which takes a number, k, as a parameter, cant use javascript methods
 
 ## Challenge
 <!-- Description of the challenge -->
-Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
+Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -12,4 +12,3 @@ I planned everything out via whiteboard, and afterwards tested my code on repl, 
 
 ## Solution
 <!-- Embedded whiteboard image -->
-C:\Users\Avrey\Desktop\codefellows\401\data-structures-and-algorithms\assets\reverse-array.jpg

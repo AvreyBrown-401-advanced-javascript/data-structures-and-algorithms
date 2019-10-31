@@ -1,13 +1,13 @@
-'use strict';
+// 'use strict';
 
-const Queue = require('./psuedoQueue');
+// const Queue = require('./psuedoQueue');
 
-describe('Tests for enqueue and dequeue will run successfully ', () => {
+// describe('Tests for enqueue and dequeue will run successfully ', () => {
 
-  let testArr = new Queue().PseudoQueue;
+//   let testArr = new Queue().PseudoQueue;
 
 
-  it('will attach a value onto the array', () => {
-    expect(testArr.enqueue).toEqual()
-  })
-});
+//   it('will attach a value onto the array', () => {
+//     expect(testArr.enqueue).toEqual()
+//   })
+// });

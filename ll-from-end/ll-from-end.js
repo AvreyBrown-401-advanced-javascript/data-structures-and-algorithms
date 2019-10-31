@@ -20,7 +20,7 @@ class LinkedList {
 
   kthFromEnd(position) {
 
-    let node = new Node();
+    // let node = new Node();
 
     let current = this.head;
     let length = 0;

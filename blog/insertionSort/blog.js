@@ -28,3 +28,5 @@ function insertionSort(arr) {
 }
 
 console.log(insertionSort([8,4,23,42,16,15]))
+
+module.exports = insertionSort;

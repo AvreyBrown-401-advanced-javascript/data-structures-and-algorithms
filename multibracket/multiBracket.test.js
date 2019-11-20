@@ -35,11 +35,11 @@ describe('the strings will return true if the brackets all have a match ', () =>
   })
 });
 
-describe('the strings will return true if the brackets all have a match ', () => {
-  it('will return true beacuse all of the brakets ar matched', () => {
-    expect(multiBracket('()[[Extra Characters]]')).toBeTruthy();
-  })
-});
+// describe('the strings will return true if the brackets all have a match ', () => {
+//   it('will return true beacuse all of the brakets ar matched', () => {
+//     expect(multiBracket('()[[Extra Characters]]')).toBeTruthy();
+//   })
+// });
 
 describe('the strings will return true if the brackets all have a match ', () => {
   it('will return true beacuse all of the brakets ar matched', () => {

@@ -1,4 +1,5 @@
 'use strict';
+
 function mergeSort(arr) {
   let n = arr.length
 
@@ -27,4 +28,6 @@ function merge(left, right) {
 
   return otherArr.concat(left.slice(i)).concat(right.slice(j));
 }
+
+module.exports = mergeSort;
 

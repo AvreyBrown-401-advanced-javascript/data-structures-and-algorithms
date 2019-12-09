@@ -1,23 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1575863392415" clover="3.2.0">
-  <project timestamp="1575863392416" name="All files">
-    <metrics statements="24" coveredstatements="23" conditionals="8" coveredconditionals="7" methods="3" coveredmethods="3" elements="35" coveredelements="33" complexity="0" loc="24" ncloc="24" packages="2" files="2" classes="2"/>
+<coverage generated="1575867044760" clover="3.2.0">
+  <project timestamp="1575867044760" name="All files">
+    <metrics statements="51" coveredstatements="50" conditionals="18" coveredconditionals="17" methods="6" coveredmethods="6" elements="75" coveredelements="73" complexity="0" loc="51" ncloc="51" packages="4" files="4" classes="4"/>
     <package name="blog.insertionSort">
       <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="blog.js" path="C:\Users\Avrey\Desktop\codefellows\401\data-structures-and-algorithms\blog\insertionSort\blog.js">
         <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="6" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="10" count="24" type="stmt"/>
-        <line num="12" count="24" type="stmt"/>
-        <line num="15" count="24" type="cond" truecount="2" falsecount="0"/>
-        <line num="18" count="24" type="stmt"/>
-        <line num="20" count="24" type="stmt"/>
-        <line num="25" count="24" type="stmt"/>
-        <line num="28" count="4" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
-        <line num="37" count="2" type="stmt"/>
+        <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="15" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="20" count="12" type="stmt"/>
+        <line num="25" count="12" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="blog.mergeSort">
+      <metrics statements="16" coveredstatements="16" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <file name="mergeSort.js" path="C:\Users\Avrey\Desktop\codefellows\401\data-structures-and-algorithms\blog\mergeSort\mergeSort.js">
+        <metrics statements="16" coveredstatements="16" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="6" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="21" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="29" count="5" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="blog.quickSort">
+      <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="quickSort.js" path="C:\Users\Avrey\Desktop\codefellows\401\data-structures-and-algorithms\blog\quickSort\quickSort.js">
+        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="8" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="8" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+        <line num="15" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
       </file>
     </package>
     <package name="multibracket">

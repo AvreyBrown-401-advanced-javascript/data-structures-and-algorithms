@@ -23,3 +23,5 @@ function quickSort(arr) {
 }
 
 console.log(quickSort([8,4,23,42,16,15]))
+
+module.exports = quickSort;

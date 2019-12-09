@@ -11,3 +11,5 @@
     - [4,8,23] and [15,16,42]
 - And then
     - [4,8,15,16,23,42]
+
+- This function is O(n), as it takes in an array, so it must go over every element in the array, despite its size

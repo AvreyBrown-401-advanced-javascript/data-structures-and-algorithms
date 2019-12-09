@@ -1,9 +1,9 @@
 'use strict';
 
-let counter;
 let array = [4,8,15,16,23,42];
 
 function binarySearch(sortedArray, input) {
+  let counter;
   for(let i = 0; i < sortedArray.length; i++) {
     if(sortedArray[i] === input){
       counter = i;
@@ -16,12 +16,6 @@ function binarySearch(sortedArray, input) {
   }
 }
 
-binarySearch(array, 15);
+console.log(binarySearch(array, 69));
 
-describe('binarySearch', () => {
-  it('it should return the index value of the given number in the array', () => {
-    expect(binarySearch(array, 15)).toEqual(2);
-  });
-  it('it should return the index value of the given number in the array', () => {
-    expect(binarySearch(array, 69)).toEqual(-1);
-  })})
+module.exports = binarySearch;

@@ -13,4 +13,4 @@ I created a variable called counter and set it equal to i inside of a for loop, 
 
 ## Solution
 <!-- Embedded whiteboard image -->
-C:\Users\Avrey\Desktop\codefellows\401\data-structures-and-algorithms\assets\binary-search.jpg
+[whiteboard]('assets\binary-search.jpg')

@@ -52,7 +52,6 @@ const table = new HashTable();
 
 table.add('avrey', '1')
 
-// table
 
 module.exports = {HashTable, hash};
 

@@ -36,9 +36,6 @@ class LinkedList {
     }
   }
 
-
-
-
   insertBefore(value, newValue) {
     const node = new Node(value);
 

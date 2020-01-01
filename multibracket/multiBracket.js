@@ -1,5 +1,5 @@
 
-'use strict';
+// 'use strict';
 // let multiBracket = function (str) {
 //   let stack = [];
 //   let pairs = {

@@ -3,108 +3,81 @@
 
 // Node class
 class Node {
-  constructor(value) {
+  constructor(value, left = null, right = null) {
     this.value = value;
-    this.left = null;
-    this.right = null;
+    this.left = left;
+    this.right = right;
   }
 }
 
 class BinaryTree {
   constructor(value) {
     this.root = new Node(value);
-    this.count = 0;
   }
 
-  // add(value) {
-  //   if(node.value === value) {
-  //     return value;
-  //   }
-  //   if(node.value > value) {
-  //     this.add(node.left )
-  //   }
-  // }
+  preOrder(){
+    let arr = [];
 
+    const traverse = node => {
 
-  preOrder(root){
+      arr.push(node.value)
 
-    console.log(root.value);
+      if(node.left) {
+        traverse(node.left)
+      }
 
-    if(root.left) {
-      this.preOrder(root.left)
+      if(node.right) {
+        traverse(node.right)
+      }
     }
-
-    if(root.right) {
-      this.preOrder(root.right)
-    }
-
-
+    traverse(this.root)
+    return arr;
   }
 
-  inOrder(root) {
+  inOrder() {
 
     let arr = [];
 
-    if(root.left) {
-      arr.push(this.inOrder(root.left));
+    const traverse = node => {
+
+      if(node.left) {
+        traverse(node.left)
+      }
+
+      arr.push(node.value)
+
+      if(node.right) {
+        traverse(node.right)
+      }
     }
-    
-    // console.log(root.value);
-    
-    if(root.right) {
-      arr.push(this.inOrder(root.right));
-    }
-    
+    traverse(this.root)
     return arr;
-
   }
 
-  postOrder(root) {
+  postOrder() {
+    let arr = [];
 
-    if(root.left) {
-      this.inOrder(root.left)
-    }
+    const traverse = node => {
 
-    if(root.right) {
-      this.inOrder(root.right)
-    }
-
-    console.log(root.value);
-  }
-
-  add(value){
-    this.count ++;
-
-    let newNode = new Node(value);
-
-    const searchTree = node => {
-      if(value < node.value) {
-        if(!node.left) {
-
-          node.left = newNode;
-        } else {
-          searchTree(node.left);
-        }
+      if(node.left) {
+        traverse(node.left)
       }
 
-      else if ( value > node.value ) {
-        if(!node.right) {
-          node.right = newNode;
-        } else {
-          searchTree(node.right);
-        }
+      if(node.right) {
+        traverse(node.right)
       }
-    };
-
-    searchTree(this.root);
+      arr.push(node.value)
+    }
+    traverse(this.root)
+    return arr;
   }
 }
 
-class BinarySearch {
-  constructor(value) {
-    this.root = new Node(value);
-    this.count = 0;
-  }
+class BinarySearch extends BinaryTree {
+  // constructor(value) {
+  //   this.root = new Node(value);
+  //   this.count = 0;
+  // }
 
   add(value){
     this.count ++;
@@ -134,23 +107,33 @@ class BinarySearch {
   }
 
   contains(value) {
-    
+    let currentNode = this.root;
+
+    while(currentNode) {
+      if(value === currentNode.value) {
+        return true;
+      }
+      if(value < currentNode.value) {
+        currentNode = currentNode.left
+      }
+      else{
+        currentNode = currentNode.right
+      }
+    }
+    return false;
   }
 }
 
 
-let tree = new BinaryTree(15);
+// let tree = new BinaryTree(15);
 
-tree.add(1)
-tree.add(2)
-tree.add(3)
-tree.add(4)
-tree.add(5)
+// tree.add(1)
+// tree.add(2)
+// tree.add(3)
+// tree.add(4)
+// tree.add(5)
 
-console.log(tree);
+// console.log(tree);
 
 
-
-// console.log(tree.preOrder(tree.root))
-// console.log(tree.inOrder(tree))
-// console.log(tree.preOrder(tree.root))
+module.exports = {BinarySearch, BinaryTree, Node};

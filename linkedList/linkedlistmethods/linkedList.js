@@ -37,30 +37,28 @@ class LinkedList {
   }
 
   insertBefore(value, newValue) {
-    const node = new Node(value);
+    const node = new Node(newValue);
 
     let current = this.head;
-    let previous = this.head;
-
-    if(this.head === value) {
-      node.next = this.head;
-      this.head = node;
-      return;
-    }
+    let previous = null;
 
     current = current.next;
 
     while(current) {
       if(current.value === value) {
-        previous.next = node;
+        if(previous === null) {
+          this.head = node;
+        }
+        else {
+          previous.next = node;
+        }
         node.next = current;
         break;
       }
-      previous = previous.next;
+      previous = current;
       current = current.next;
     }
-
-
+    this.size++;
   }
 
   insertAfter(value, newValue){
@@ -86,9 +84,12 @@ class LinkedList {
   }
 }
 
-const ll = new LinkedList
-
+const ll = new LinkedList()
 ll.append(1);
-ll.insertBefore( 1, 0);
+ll.append(2);
+ll.append(4);
+ll.insertBefore( 4, 3);
 // ll.insertAfter( 1, 0);
 console.log(ll);
+
+module.exports = LinkedList;

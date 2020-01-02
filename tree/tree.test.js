@@ -1,6 +1,6 @@
 'use strict';
 
-const {BinarySearch, BinaryTree, Node} = require('./tree');
+const {BinarySearch} = require('./tree');
 
 describe('tree traversal', () => {
   it('Can successfully instantiate an empty tree', () => {

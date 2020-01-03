@@ -20,3 +20,21 @@ I watched several tutorial videos concerning binary trees and made the methods a
 ## API
 <!-- Description of each method publicly available in each of your trees -->
 N/A
+
+
+
+
+# Find Max Challenge
+<!-- Short summary or background information -->
+Find the Maximum Value in a Binary Tree
+
+## Challenge
+<!-- Description of the challenge -->
+Write an instance method called find-maximum-value. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I planned everything out via whiteboard, and afterwards tested my code on repl, I refactored it and got it working
+
+## Solution
+<!-- Embedded whiteboard image -->
+[whiteboard](Challenge-18.png)

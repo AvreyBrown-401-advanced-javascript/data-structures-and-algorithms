@@ -12,5 +12,5 @@ I planned everything out via whiteboard, and afterwards tested my code on repl, 
 
 ## Solution
 <!-- Embedded whiteboard image -->
-C:\Users\Avrey\Desktop\codefellows\401\data-structures-and-algorithms\assets\reverse-array.jpg
+[whiteboard](reverse-array.png)
 

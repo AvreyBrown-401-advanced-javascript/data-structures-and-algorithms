@@ -1,8 +1,10 @@
+'use strict'
+
 let arr = [1,2,3];
+const newArr = [];
 
-function reverseArray() {
+function reverseArray(arr) {
 
-  const newArr = [];
   for(let i = -arr.length; i < arr.length; i++) {
     newArr.push(arr.pop(i));
   }
@@ -10,4 +12,6 @@ function reverseArray() {
   return newArr;
 }
 
-reverseArray();
+reverseArray(arr);
+
+console.log(newArr)

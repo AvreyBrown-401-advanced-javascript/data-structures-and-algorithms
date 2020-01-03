@@ -124,6 +124,19 @@ class BinarySearch extends BinaryTree {
   }
 }
 
+// let tree1= new BinarySearch(1);
+// let tree2 = new BinarySearch(1);
+
+// function intersect(tree1, tree2) {
+
+//   tree1.preOrder();
+//   tree2.preOrder();
+
+//   while()
+
+// }
+
+
 
 // let tree = new BinaryTree(15);
 

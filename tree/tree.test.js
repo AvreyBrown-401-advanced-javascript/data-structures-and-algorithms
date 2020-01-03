@@ -54,6 +54,17 @@ describe('tree traversal', () => {
     tree.add(6);
     expect(tree.postOrder()).toEqual([6,5,4,3,2,1]);
   });
+
+  it('Can find the largest value in the given binary tree', () => {
+    const tree = new BinarySearch(1);
+    tree.add(1);
+    tree.add(2);
+    tree.add(3);
+    tree.add(4);
+    tree.add(5);
+    tree.add(6);
+    expect(tree.findMax()).toEqual(6);
+  });
 })
 
 

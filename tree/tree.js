@@ -1,5 +1,6 @@
 'use strict';
 
+// const Queue = require('../psuedoQueue/psuedoQueue');
 
 // Node class
 class Node {
@@ -122,31 +123,30 @@ class BinarySearch extends BinaryTree {
     }
     return false;
   }
+
+  findMax() {
+
+    let max = this.root.value;
+
+
+    let traverse = (node) => {
+
+      if(node.left) {
+        traverse(node.left)
+      }
+
+      if(node.right) {
+        traverse(node.right)
+
+      }
+      if(node.value > max) {
+        max = node.value;
+      }
+    }
+
+    traverse(this.root);
+    return max;
+  }
 }
-
-// let tree1= new BinarySearch(1);
-// let tree2 = new BinarySearch(1);
-
-// function intersect(tree1, tree2) {
-
-//   tree1.preOrder();
-//   tree2.preOrder();
-
-//   while()
-
-// }
-
-
-
-// let tree = new BinaryTree(15);
-
-// tree.add(1)
-// tree.add(2)
-// tree.add(3)
-// tree.add(4)
-// tree.add(5)
-
-// console.log(tree);
-
 
 module.exports = {BinarySearch, BinaryTree, Node};
